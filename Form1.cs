@@ -17,7 +17,7 @@ namespace cadabra
 {
     public partial class Form1 : Form
     {
-        // TODO: Don't do this
+        // TODO: Update this to a class
         private string[] workingDirectoryFiles = new string[] { };
 
         public Form1()
@@ -39,12 +39,11 @@ namespace cadabra
 
                 if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(fbd.SelectedPath))
                 {
-
                     // Store full file paths
                     workingDirectoryFiles = Directory.GetFiles(fbd.SelectedPath);
 
                     // Update display with dir contents
-                    string[] fileNames = GetFileNames(fbd.SelectedPath); 
+                    string[] fileNames = GetFileNames(fbd.SelectedPath);
 
                     // Update window contents
                     FileBrowserDisplay_update(fileNames);
@@ -140,24 +139,39 @@ namespace cadabra
             // List to store SHA sums
             string[] SHAList = new string[workingDirectoryFiles.Length];
 
+            SwApi[] DocumentList = new SwApi[workingDirectoryFiles.Length];
+
             // Calculate SHA for each file in curdir
-            for (int i = 0; i < workingDirectoryFiles.Length; i++) 
+            for (int i = 0; i < workingDirectoryFiles.Length; i++)
             {
+                // TODO: Parse end of file for <prt> or <asm> and include rules
+                DocumentList[i] = new SwApi(workingDirectoryFiles[i], "prt", new string[0]);
                 SHAList[i] = CalculateSHA(workingDirectoryFiles[i]);
+                ResultsDisplay.Nodes.Add(new TreeNode(workingDirectoryFiles[i] + " was created by " + DocumentList[i].SavedByUser));
             }
 
             // Output results of scan
             if (QuickVerifySHAS(SHAList))
             {
-                System.Windows.Forms.MessageBox.Show("Uh OH! Someone cheated.");
+               System.Windows.Forms.MessageBox.Show("Uh OH! Someone cheated.");
             } else
             {
-                System.Windows.Forms.MessageBox.Show("Yippee, they got away with it.");
+               System.Windows.Forms.MessageBox.Show("Yippee, they got away with it.");
             }
-            
+
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ResultsDisplay_AfterSelect(object sender, TreeViewEventArgs e)
         {
 
         }
