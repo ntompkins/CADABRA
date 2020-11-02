@@ -68,7 +68,8 @@
             this.toolsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1195, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(896, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -78,39 +79,39 @@
             this.openZipToolStripMenuItem,
             this.openDirectoryToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // openZipToolStripMenuItem
             // 
             this.openZipToolStripMenuItem.Name = "openZipToolStripMenuItem";
-            this.openZipToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
+            this.openZipToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.openZipToolStripMenuItem.Text = "Open Zip";
             this.openZipToolStripMenuItem.Click += new System.EventHandler(this.openZipToolStripMenuItem_Click);
             // 
             // openDirectoryToolStripMenuItem
             // 
             this.openDirectoryToolStripMenuItem.Name = "openDirectoryToolStripMenuItem";
-            this.openDirectoryToolStripMenuItem.Size = new System.Drawing.Size(193, 26);
+            this.openDirectoryToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.openDirectoryToolStripMenuItem.Text = "Open Directory";
             this.openDirectoryToolStripMenuItem.Click += new System.EventHandler(this.openDirectoryToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "View";
             // 
             // toolsToolStripMenuItem
             // 
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // tableLayoutPanel1
@@ -123,13 +124,14 @@
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.CurrentDirectoryDisplay, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.FileBrowserDisplay, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 31);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(9, 25);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1161, 561);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(871, 456);
             this.tableLayoutPanel1.TabIndex = 1;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -138,17 +140,19 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(308, 29);
+            this.panel1.Size = new System.Drawing.Size(231, 24);
             this.panel1.TabIndex = 0;
             // 
             // button3
             // 
             this.button3.Enabled = false;
-            this.button3.Location = new System.Drawing.Point(205, 3);
+            this.button3.Location = new System.Drawing.Point(154, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(95, 23);
+            this.button3.Size = new System.Drawing.Size(71, 19);
             this.button3.TabIndex = 2;
             this.button3.Text = "Settings";
             this.button3.UseVisualStyleBackColor = true;
@@ -156,9 +160,10 @@
             // button2
             // 
             this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(104, 3);
+            this.button2.Location = new System.Drawing.Point(78, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 23);
+            this.button2.Size = new System.Drawing.Size(71, 19);
             this.button2.TabIndex = 1;
             this.button2.Text = "Sort";
             this.button2.UseVisualStyleBackColor = true;
@@ -166,9 +171,10 @@
             // button1
             // 
             this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Location = new System.Drawing.Point(2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 23);
+            this.button1.Size = new System.Drawing.Size(71, 19);
             this.button1.TabIndex = 0;
             this.button1.Text = "Flag";
             this.button1.UseVisualStyleBackColor = true;
@@ -178,17 +184,19 @@
             this.panel2.Controls.Add(this.button6);
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.ScanButton);
-            this.panel2.Location = new System.Drawing.Point(317, 3);
+            this.panel2.Location = new System.Drawing.Point(237, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(307, 29);
+            this.panel2.Size = new System.Drawing.Size(230, 24);
             this.panel2.TabIndex = 2;
             // 
             // button6
             // 
             this.button6.Enabled = false;
-            this.button6.Location = new System.Drawing.Point(226, 3);
+            this.button6.Location = new System.Drawing.Point(170, 2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(56, 19);
             this.button6.TabIndex = 2;
             this.button6.Text = "Save Report";
             this.button6.UseVisualStyleBackColor = true;
@@ -196,18 +204,20 @@
             // button5
             // 
             this.button5.Enabled = false;
-            this.button5.Location = new System.Drawing.Point(84, 3);
+            this.button5.Location = new System.Drawing.Point(63, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(136, 23);
+            this.button5.Size = new System.Drawing.Size(102, 19);
             this.button5.TabIndex = 1;
             this.button5.Text = "Detailed Report";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // ScanButton
             // 
-            this.ScanButton.Location = new System.Drawing.Point(3, 3);
+            this.ScanButton.Location = new System.Drawing.Point(2, 2);
+            this.ScanButton.Margin = new System.Windows.Forms.Padding(2);
             this.ScanButton.Name = "ScanButton";
-            this.ScanButton.Size = new System.Drawing.Size(75, 23);
+            this.ScanButton.Size = new System.Drawing.Size(56, 19);
             this.ScanButton.TabIndex = 0;
             this.ScanButton.Text = "Scan";
             this.ScanButton.UseVisualStyleBackColor = true;
@@ -218,47 +228,54 @@
             this.flowLayoutPanel1.Controls.Add(this.ResultsDisplay);
             this.flowLayoutPanel1.Controls.Add(this.richTextBox1);
             this.flowLayoutPanel1.Controls.Add(this.maskedTextBox1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(317, 38);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(237, 30);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(841, 335);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(631, 272);
             this.flowLayoutPanel1.TabIndex = 4;
             // 
             // ResultsDisplay
             // 
-            this.ResultsDisplay.Location = new System.Drawing.Point(3, 3);
+            this.ResultsDisplay.Location = new System.Drawing.Point(2, 2);
+            this.ResultsDisplay.Margin = new System.Windows.Forms.Padding(2);
             this.ResultsDisplay.Name = "ResultsDisplay";
-            this.ResultsDisplay.Size = new System.Drawing.Size(838, 332);
+            this.ResultsDisplay.Size = new System.Drawing.Size(630, 270);
             this.ResultsDisplay.TabIndex = 0;
+            this.ResultsDisplay.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.ResultsDisplay_AfterSelect);
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(3, 341);
+            this.richTextBox1.Location = new System.Drawing.Point(2, 276);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(842, 160);
+            this.richTextBox1.Size = new System.Drawing.Size(632, 131);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(3, 507);
+            this.maskedTextBox1.Location = new System.Drawing.Point(2, 411);
+            this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(2);
             this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(8, 22);
+            this.maskedTextBox1.Size = new System.Drawing.Size(7, 20);
             this.maskedTextBox1.TabIndex = 2;
             // 
             // CurrentDirectoryDisplay
             // 
             this.CurrentDirectoryDisplay.Enabled = false;
-            this.CurrentDirectoryDisplay.Location = new System.Drawing.Point(3, 534);
+            this.CurrentDirectoryDisplay.Location = new System.Drawing.Point(2, 434);
+            this.CurrentDirectoryDisplay.Margin = new System.Windows.Forms.Padding(2);
             this.CurrentDirectoryDisplay.Name = "CurrentDirectoryDisplay";
-            this.CurrentDirectoryDisplay.Size = new System.Drawing.Size(308, 22);
+            this.CurrentDirectoryDisplay.Size = new System.Drawing.Size(231, 20);
             this.CurrentDirectoryDisplay.TabIndex = 6;
             // 
             // FileBrowserDisplay
             // 
             this.FileBrowserDisplay.FormattingEnabled = true;
-            this.FileBrowserDisplay.Location = new System.Drawing.Point(3, 38);
+            this.FileBrowserDisplay.Location = new System.Drawing.Point(2, 30);
+            this.FileBrowserDisplay.Margin = new System.Windows.Forms.Padding(2);
             this.FileBrowserDisplay.Name = "FileBrowserDisplay";
-            this.FileBrowserDisplay.Size = new System.Drawing.Size(300, 446);
+            this.FileBrowserDisplay.Size = new System.Drawing.Size(226, 349);
             this.FileBrowserDisplay.TabIndex = 5;
             // 
             // directorySearcher1
@@ -269,14 +286,16 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1195, 596);
+            this.ClientSize = new System.Drawing.Size(896, 484);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "CADABRA";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
